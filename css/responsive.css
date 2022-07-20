@@ -107,6 +107,7 @@
         flex-direction: column;
         /* height: 923px; */
         height: 1052px;
+        text-align: center;
     }
 
     .header-title {
