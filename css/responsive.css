@@ -105,7 +105,8 @@
     .header {
         padding: 76px;
         flex-direction: column;
-        height: 923px;
+        /* height: 923px; */
+        height: 1052px;
     }
 
     .header-title {
@@ -127,6 +128,17 @@
     .header-image img {
         margin-top: 10px;
         width: 94%;
+    }
+
+    .match-list ul li {
+        font-size: .8rem;
+        padding: 10px 20px;
+        background-color: var(--white-text);
+        text-align: center;
+        border-radius: 5px;
+        color: var(--black-text);
+        list-style: none;
+        margin-top: 10px;
     }
 
     .main-content {
