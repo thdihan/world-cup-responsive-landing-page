@@ -28,10 +28,21 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--black-text);
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
 }
 
 .active-btn {
     background-color: var(--active-button-color);
+    color: var(--white-text)
+}
+
+.inactive-btn {
+    background-color: var(--white-text);
 }
 
 .container {
@@ -95,3 +106,124 @@ a {
 /* -----------------------------
     Header Area Style - End 
 ----------------------------- */
+
+/* -----------------------------
+    Main Content Style - Start 
+----------------------------- */
+
+.main-content {
+    display: flex;
+}
+
+/* Navigation Button */
+.navigation {
+    width: 312px;
+    height: 312px;
+    background-color: var(--black-text);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.navigation a {
+    display: inline-block;
+    text-align: center;
+    padding: 18px 10px;
+
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.navigation a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+/* Blog Content */
+.blog-content {
+    width: 985px;
+    margin-left: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+
+.blog {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.blog-details {
+    padding: 20px;
+}
+
+.blog-button a {
+    font-size: 1rem;
+    display: inline-block;
+    border: 1px solid var(--black-text);
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-weight: 500;
+}
+
+.blog-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.blog-info {
+    margin-top: 20px;
+    display: flex;
+    font-weight: 400;
+}
+
+.blog-info span:nth-child(2n) {
+    margin-left: 10px;
+}
+
+.blog-comment {
+    margin-left: 30px
+}
+
+/* -----------------------------
+    Main Content Style - End 
+----------------------------- */
+
+/* -----------------------------
+    Footer Style - Start 
+----------------------------- */
+.footer-area {
+    background-color: var(--black-text);
+    margin-bottom: 0;
+    color: var(--white-text);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    height: 444px;
+    justify-content: space-evenly;
+}
+
+.social i {
+    font-size: 3rem;
+    margin: 0 5px;
+    color: #B9B9B9;
+}
+
+.footer-nav a {
+    color: #B9B9B9;
+    display: inline-block;
+    padding: 5px 5px;
+}
