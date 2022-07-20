@@ -92,6 +92,8 @@ hr {
     margin-left: 19px;
 }
 
+
+
 /* Header Image Part */
 
 .header-image {
@@ -100,11 +102,58 @@ hr {
     height: 547px;
 }
 
-.header-image img {
+.banner-image {
     position: absolute;
+    background-color: var(--black-text);
+    height: 100%;
+    z-index: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.header-image img {
+
     width: 94%;
 
+
 }
+
+
+.header-image:hover>.banner-image {
+    /* animation: changeImage 1s ease 1; */
+    opacity: 0;
+}
+
+
+.match-list {
+    opacity: 0;
+    flex: 3;
+    text-align: center;
+    color: var(--white-text);
+    transition: opacity 2s ease-in-out 2s;
+}
+
+#active-list {
+    color: red;
+}
+
+.header-image:hover>.match-list {
+    opacity: 1;
+}
+
+.match-list ul li {
+
+    padding: 20px 20px;
+    background-color: var(--white-text);
+    text-align: center;
+    border-radius: 5px;
+    color: var(--black-text);
+    list-style: none;
+    margin-top: 40px;
+}
+
+/* .match-list ul li:not(:last-child) {
+    margin-bottom: 20px;
+} */
 
 /* -----------------------------
     Header Area Style - End 
